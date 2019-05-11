@@ -1,0 +1,21 @@
+body {text-align: center}
+
+.grid-container {
+    display: grid;
+    /*Columns*/
+    /*grid-template-columns: 20% 20% 20% 20% 20%*/
+    /*grid-template-columns: repeat(12, 10%)*/
+    /*grid-template-columns: 1fr 1fr*/
+    grid-template-columns: repeat(3, 1fr);
+    /*Rows*/
+    /*grid-template-rows: 80px 50px 100px*/
+    /*grid-template-rows: repeat(3, 200px)*/
+    grid-auto-rows: minmax(200px, auto)
+}
+
+.grid-container > div {
+    padding: 30px;
+    background: #333;
+    color: #fff;
+    margin: 5px 0;
+}
